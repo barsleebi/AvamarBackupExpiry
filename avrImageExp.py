@@ -1,3 +1,10 @@
+"""
+Author : Barsleebi Thomas John
+Date : 09-08-2021
+Function : This will use avamar in-build modify snapups module to generate forced backup expiration scripts. 
+These scripts will be then copied /tmp on the avamar server and executed. 
+Do note this will just change the expiration date of all backup images actual deletion will start once the garbage collection is started.
+"""
 import os, sys, re, string, time, paramiko
 from operator import itemgetter
 from typing import OrderedDict
